@@ -1,0 +1,3 @@
+replace 2200=22 ,501=51,1001=11
+SELECT CEIL(AVG(Salary) - AVG(REPLACE(Salary, '0', '')))
+FROM EMPLOYEES;
