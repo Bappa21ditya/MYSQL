@@ -10,3 +10,12 @@ order by length(city),city asc limit 1;
 select city, length(city) from station
 order by length(city) desc
 limit 1;
+
+
+Weather Observation Station 6
+Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+
+Input Format
+select city
+from station 
+where  LEFT(LOWER(CITY), 1) IN ('a', 'e', 'i', 'o', 'u');
